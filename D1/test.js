@@ -249,5 +249,31 @@ hitungKapital(string1);
 hitungKapital(string2);
 hitungKapital(string3);
 
-console.log('\n===========SELESAI===========\n');
+console.log('\n===========SOAL 12============\n');
+/** soal 12 : for loop
+ * buat function untuk mencari nilai tertinggi dari sebuah array
+ */
+const nilaiTertinggi = [1, 34, 21, 54, 6567, 98764, 23, 453];
 
+function getNilaiTertinggi(array) {
+  higher = 0;
+  array.forEach((arr) => {
+    higher = higher > arr ? higher : arr;
+  });
+  return higher;
+}
+console.log(getNilaiTertinggi(nilaiTertinggi));
+
+console.log('\n===========SOAL 13============\n');
+/** Soal 13 : for
+ * buat fungsi untuk membuat piramid(segitiga sama kaki) yang terbuat dari bintang "*"
+ * dengan jumlah baris yang ditentukan oleh user melalui parameter fungsi
+ */
+
+function pyramid(a) {
+  for (let i = 0; i < a; i++) {}
+}
+
+pyramid(10);
+
+console.log('\n===========SELESAI===========\n');
