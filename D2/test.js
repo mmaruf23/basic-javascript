@@ -108,7 +108,7 @@ console.log(filteredEmployeeOneHobbies);
 //   kary.jobDesk.some((job) => job.salary == highestfe)
 // ).nama;
 // console.log('FE dengan gaji tertinggi : ', fe);
-
+/*
 const fe2 = employee.find((kary) =>
   kary.jobDesk.some((job) => {
     return (
@@ -124,7 +124,20 @@ const fe2 = employee.find((kary) =>
     );
   })
 ).nama;
-console.log('FE dengan gaji tertinggi', fe);
+*/
+const feHigherSalary = employee.filter(item => {
+  return item.jobDesk.some(job => job.title == "Frontend")
+}).map(item => {
+  return {
+    ...item,
+    jobDesk: item.jobDesk.find(job => job.title == "Frontend")
+  }
+})
+.reduce((a,c) => {
+  return a.jobDesk.salary > c.jobDesk.salary ? a : c
+}, {jobDesk: { salary: 0}});
+
+console.log('FE dengan gaji tertinggi', feHigherSalary.nama);
 
 /** Cari nilai tertinggi dari 3 siswa menggunakan math obj */
 let siswa1 = 49;
