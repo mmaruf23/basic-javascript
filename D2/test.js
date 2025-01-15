@@ -125,17 +125,16 @@ const fe2 = employee.find((kary) =>
   })
 ).nama;
 */
-const feHigherSalary = employee.filter(item => {
-  return item.jobDesk.some(job => job.title == "Frontend")
-}).map(item => {
-  return {
-    ...item,
-    jobDesk: item.jobDesk.find(job => job.title == "Frontend")
-  }
-})
-.reduce((a,c) => {
-  return a.jobDesk.salary > c.jobDesk.salary ? a : c
-}, {jobDesk: { salary: 0}});
+const feHigherSalary = employee
+  .filter((item) => {
+    return item.jobDesk.some((job) => job.title == 'Frontend');
+  })
+  .reduce((a, c) => {
+    const highest = a.jobDesk.find((job) => job.title === 'Frontend').salary;
+    const current = c.jobDesk.find((job) => job.title === 'Frontend').salary;
+
+    return highest > current ? a : c;
+  });
 
 console.log('FE dengan gaji tertinggi', feHigherSalary.nama);
 
@@ -203,5 +202,7 @@ const employeeWithALotOfHobbies = employee
 console.log(`Karyawan dengan hoby yang banyak : `, employeeWithALotOfHobbies);
 console.log(
   `Karyawan dengan hoby yang banyak : `,
-  ...employeeWithALotOfHobbies
+  employeeWithALotOfHobbies.join(', ')
 );
+
+console.table(employee);
