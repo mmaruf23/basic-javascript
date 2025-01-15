@@ -30,6 +30,7 @@ dataEmployee.forEach((emp) => {
  * buat perintah untuk menambahkan minimal 1 data JSON kedalam file bernama employee.json
  * -> readfile & replace dengan writefile
  */
+
 if (!dataEmployee.some((emp) => emp.id == 6)) {
   dataEmployee.push({
     id: 6,
@@ -43,9 +44,21 @@ if (!dataEmployee.some((emp) => emp.id == 6)) {
     ],
     hobby: ['Gaming', 'Membaca'],
   });
+  dataEmployee.push({
+    id: 7,
+    nama: 'Dana',
+    age: 23,
+    jobDesk: [
+      {
+        title: 'Backend',
+        salary: 4_000_000,
+      },
+    ],
+    hobby: ['Gaming'],
+  });
 }
 
-const newDataEmployee = JSON.stringify(dataEmployee);
+const newDataEmployee = JSON.stringify(dataEmployee, null, 2);
 fs.writeFile('./employee.json', newDataEmployee, 'utf-8', (err) => {
   if (err) {
     console.log(err);
@@ -64,7 +77,7 @@ const agedEmployee = dataEmployee.filter((emp) => emp.age >= 26);
 
 fs.writeFile(
   './karyawan_tuwir.json',
-  JSON.stringify(agedEmployee),
+  JSON.stringify(agedEmployee, null, 2),
   'utf-8',
   (err) => {
     if (err) {
@@ -86,7 +99,7 @@ const deletedEmployee = dataEmployee.filter((emp) => emp.id != 1);
 
 fs.writeFile(
   './deleted_data.json',
-  JSON.stringify(deletedEmployee),
+  JSON.stringify(deletedEmployee, null, 2),
   'utf-8',
   (err) => {
     if (err) {
