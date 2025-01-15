@@ -69,25 +69,25 @@ console.log('\n===========SOAL 4============\n');
 let input = 7;
 switch (input) {
   case 1:
-    console.log('Senin');
+    console.log('Monday');
     break;
   case 2:
-    console.log('Selasa');
+    console.log('Tuesday');
     break;
   case 3:
-    console.log('Rabu');
+    console.log('Wednesday');
     break;
   case 4:
-    console.log('Kamis');
+    console.log('Thursday');
     break;
   case 5:
-    console.log("Jum'at");
+    console.log('Friday');
     break;
   case 6:
-    console.log('Sabtu');
+    console.log('Saturday');
     break;
   case 7:
-    console.log('Minggu');
+    console.log('Sunday');
     break;
 
   default:
@@ -107,7 +107,7 @@ let nilai = 78;
 if (nilai >= 80) {
   console.log('Anda lulus dengan sangat baik');
 } else if (nilai >= 70 && nilai < 80) {
-  console.log('Anda lulus dengan baik');
+  console.log('Lulus dengan baik');
 } else if (nilai >= 60 && nilai < 70) {
   console.log('Lulus');
 } else {
@@ -269,11 +269,19 @@ console.log('\n===========SOAL 13============\n');
  * buat fungsi untuk membuat piramid(segitiga sama kaki) yang terbuat dari bintang "*"
  * dengan jumlah baris yang ditentukan oleh user melalui parameter fungsi
  */
-
-function pyramid(a) {
-  for (let i = 0; i < a; i++) {}
+function pyramid(num) {
+  let shape = '';
+  for (let i = 1; i < num; i++) {
+    for (let j = 1; j < num - i; j++) {
+      shape += ' ';
+    }
+    for (let k = 0; k < i; k++) {
+      shape += '* ';
+    }
+    shape += '\n';
+  }
+  console.log(`\n${shape}\n`);
 }
-
-pyramid(10);
+-pyramid(11);
 
 console.log('\n===========SELESAI===========\n');
