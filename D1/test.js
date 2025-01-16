@@ -282,6 +282,6 @@ function pyramid(num) {
   }
   console.log(`\n${shape}\n`);
 }
--pyramid(11);
+pyramid(11);
 
 console.log('\n===========SELESAI===========\n');
