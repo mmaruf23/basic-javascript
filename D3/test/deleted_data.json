@@ -70,5 +70,19 @@
       "Gaming",
       "Membaca"
     ]
+  },
+  {
+    "id": 7,
+    "nama": "Dana",
+    "age": 23,
+    "jobDesk": [
+      {
+        "title": "Backend",
+        "salary": 4000000
+      }
+    ],
+    "hobby": [
+      "Gaming"
+    ]
   }
 ]

@@ -184,6 +184,7 @@ const carProducts = [
   },
 ];
 
+
 const fs = require('fs');
 
 fs.writeFile(

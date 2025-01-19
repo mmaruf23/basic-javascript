@@ -70,5 +70,34 @@
     "hobby": [
       "Membaca"
     ]
+  },
+  {
+    "id": 6,
+    "nama": "Doni",
+    "age": 24,
+    "jobDesk": [
+      {
+        "title": "Backend",
+        "salary": 5000000
+      }
+    ],
+    "hobby": [
+      "Gaming",
+      "Membaca"
+    ]
+  },
+  {
+    "id": 7,
+    "nama": "Dana",
+    "age": 23,
+    "jobDesk": [
+      {
+        "title": "Backend",
+        "salary": 4000000
+      }
+    ],
+    "hobby": [
+      "Gaming"
+    ]
   }
 ]
