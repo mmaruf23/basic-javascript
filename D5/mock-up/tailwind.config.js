@@ -2,8 +2,11 @@
 module.exports = {
   content: ['./index.html'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        plus: ["Plus Jakarta Sans", "serif"]
+      }
+    },
   },
   plugins: [],
-}
-
+};

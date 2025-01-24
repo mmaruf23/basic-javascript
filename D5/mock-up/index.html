@@ -1,254 +1,727 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
-        <title>HOME | Merdeka Belajar - Kampus Merdeka</title>
-        <link rel="icon" href="https://kampusmerdeka.kemdikbud.go.id/favicon.ico" />
-        <!--   <script src="https://cdn.tailwindcss.com"></script> -->
-        <link rel="stylesheet" href="./styles.css" type="text/css" media="all" />
-    </head>
 
-    <body class="bg-gray-50" style="font-family: &quot;Plus Jakarta Sans&quot;, serif">
-        <!-- NAV -->
-        <nav class="flex justify-center bg-black">
-            <div class="flex p-3 lg:p-4 w-[1170px] justify-between">
-                <div class="flex gap-4 items-center">
-                    <div class="">
-                        <img class="w-10" src="logo-pendidikan.webp" alt="" srcset="" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME | Merdeka Belajar - Kampus Merdeka</title>
+    <link rel="icon" href="https://kampusmerdeka.kemdikbud.go.id/favicon.ico" />
+    <!--   <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./styles.css" type="text/css" media="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+    <!-- NAV -->
+    <nav class="flex justify-center bg-black">
+        <div class="flex p-3 lg:p-4 w-[1170px] justify-between">
+            <div class="flex gap-4 items-center">
+                <div class="">
+                    <img class="w-10" src="logo-pendidikan.webp" alt="" srcset="" />
+                </div>
+                <div class="">
+                    <img class="w-[76px]" src="logo-white.webp" alt="" />
+                </div>
+            </div>
+            <div class="text-white items-center gap-11 font-bold text-base font-sans hidden lg:flex">
+                <div>
+                    <span>Beranda</span>
+                </div>
+                <div>
+                    <span>Program</span>
+                </div>
+                <div>
+                    <span>Butuh Bantuan?</span>
+                </div>
+                <div class="flex bg-white text-black items-center gap-2 p-3 rounded-3xl">
+                    <svg viewBox="0 0 24 24" height="20" fill="#A0A4A8" stroke="">
+                        <path
+                            d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z">
+                        </path>
+                    </svg>
+                    <span class="font-semibold font-plus">Masuk ke
+                        Akun</span>
+                </div>
+            </div>
+            <div class="flex lg:hidden text-white items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16 M4 12h16 M4 18h16" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+    <!-- SEMI NAV -->
+    <nav class="hidden lg:flex justify-center">
+        <div class="flex justify-start w-[1140px] gap-10 p-4">
+            <div class="flex gap-5 text-wrap justify-center items-center font-semibold">
+                <p class="w-20">Kampus Mengajar</p>
+                <svg viewBox="0 0 24 24" height="24" fill="" stroke="">
+                    <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
+                </svg>
+            </div>
+            <div class="flex gap-5 text-wrap justify-center items-center font-semibold">
+                <p class="w-28">Magang MSIB</p>
+                <svg viewBox="0 0 24 24" height="24" fill="" stroke="">
+                    <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
+                </svg>
+            </div>
+            <div class="flex gap-5 text-wrap justify-center items-center font-semibold">
+                <p class="w-36">Studi Independen Bersertifikat</p>
+                <svg viewBox="0 0 24 24" height="24" fill="" stroke="">
+                    <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
+                </svg>
+            </div>
+            <div class="flex gap-5 text-wrap justify-center items-center font-semibold">
+                <p class="w-40">Pertukaran Mahasiswa Merdeka</p>
+                <svg viewBox="0 0 24 24" height="24" fill="" stroke="">
+                    <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
+                </svg>
+            </div>
+            <div class="flex gap-5 text-wrap justify-center items-center font-semibold">
+                <p class="w-36">Program dan Kegiatan Lainnya</p>
+            </div>
+        </div>
+    </nav>
+    <!-- SECTION -->
+    <section class="flex justify-center bg-[url(./headline-mahasiswa.webp)] bg-no-repeat bg-cover bg-center w-full">
+        <div class="flex justify-start items-center w-[1170px] lg:h-[556px] h-[315px]">
+            <div class="text-wrap text-white lg:mx-0 mx-5 lg:pt-0 pt-12 pb-10">
+                <div class="w-56 h-20 lg:w-1/2 lg:h-full">
+                    <p class="lg:text-7xl text-[28px] leading-10 font-bold">Ambil Kendali Masa Depanmu</p>
+                </div>
+                <div class="lg:w-1/2">
+                    <p class="text-[16px] lg:text-xl leading-6 font-plus">Kampus Merdeka adalah cara terbaik
+                        berkuliah. Dapatkan kemerdekaan
+                        untuk membentuk masa depan yang sesuai dengan aspirasi kariermu.</p>
+                </div>
+                <div class="flex mt-5 gap-3 flex-col lg:flex-row text-sm">
+                    <div class="bg-blue-600 rounded-2xl lg:w-56 lg:py-3 py-2.5 text-center">
+                        <span class="font-semibold lg:text-[16px]">Telusuri Program</span>
                     </div>
-                    <div class="">
-                        <img class="w-[76px]" src="logo-white.webp" alt="" />
+                    <div class="bg-white rounded-2xl lg:py-3 py-2.5 lg:w-56 text-center">
+                        <span class="font-semibold text-black lg:text-[16px]">Cek Persyaratan Umum</span>
                     </div>
                 </div>
-                <div class="text-white items-center gap-11 font-bold text-base font-sans hidden lg:flex">
-                    <div>
-                        <span>Beranda</span>
+            </div>
+        </div>
+    </section>
+    <section class="flex justify-center">
+        <div class="lg:w-[1170px]">
+            <div class="px-6 lg:px-0 py-5">
+                <span class="lg:text-[40px] text-[28px]  leading-[56px] font-bold">Program dan Kegiatan Unggulan</span>
+            </div>
+            <div class="lg:w-[1170px] w-screen overflow-scroll font-plus" style="scrollbar-width: none;">
+                <div class="mx-4 lg:mx-0 flex">
+                    <!-- KAMPUS MENGAJAR -->
+                    <div class="flex flex-col justify-between w-[256px] h-[370px] rounded-2xl m-3 p-4 bg-white">
+                        <div class="flex flex-col">
+                            <div class="flex justify-center w-[224px] h-[58px] my-4">
+                                <img class="" src="./assets/kampus-mengajar.png" alt="" />
+                            </div>
+                            <div class="">
+                                <p class="text-[18px] ">Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui
+                                    <span class="font-bold leading-5">Kampus Mengajar</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="">
+                                <div class="flex justify-center gap-2 rounded-2xl border border-black p-2 mb-2">
+                                    <span class="font-semibold">Selengkapnya</span>
+                                    <svg viewBox="0 0 24 24" height="24" stroke>
+                                        <path
+                                            d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MAGANG MSIB -->
+
+                    <div class="flex flex-col justify-between w-[256px] h-[370px] rounded-2xl m-3 p-4 bg-white">
+                        <div class="flex flex-col">
+                            <div class="flex justify-center w-[224px] h-[58px] my-4">
+                                <img class="" src="./assets/kampus-mengajar.png" alt="" />
+                            </div>
+                            <div class="">
+                                <p class="text-[18px] ">Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui
+                                    <span class="font-bold leading-5">Kampus Mengajar</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="">
+                                <div class="flex justify-center gap-2 rounded-2xl border border-black p-2 mb-2">
+                                    <span class="font-semibold">Selengkapnya</span>
+                                    <svg viewBox="0 0 24 24" height="24" stroke>
+                                        <path
+                                            d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- STUDI INDEPENDEN -->
+                    <div class="flex flex-col justify-between w-[256px] h-[370px] rounded-2xl m-3 p-4 bg-white">
+                        <div class="flex flex-col">
+                            <div class="flex justify-center w-[224px] h-[58px] my-4">
+                                <img class="" src="./assets/kampus-mengajar.png" alt="" />
+                            </div>
+                            <div class="">
+                                <p class="text-[18px] ">Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui
+                                    <span class="font-bold leading-5">Kampus Mengajar</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="">
+                                <div class="flex justify-center gap-2 rounded-2xl border border-black p-2 mb-2">
+                                    <span class="font-semibold">Selengkapnya</span>
+                                    <svg viewBox="0 0 24 24" height="24" stroke>
+                                        <path
+                                            d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MAGANG MANDIRI  -->
+                    <div class="flex flex-col justify-between w-[256px] h-[370px] rounded-2xl m-3 p-4 bg-white">
+                        <div class="flex flex-col">
+                            <div class="flex justify-center w-[224px] h-[58px] my-4">
+                                <img class="" src="./assets/kampus-mengajar.png" alt="" />
+                            </div>
+                            <div class="">
+                                <p class="text-[18px] ">Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui
+                                    <span class="font-bold leading-5">Kampus Mengajar</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="">
+                                <div class="flex justify-center gap-2 rounded-2xl border border-black p-2 mb-2">
+                                    <span class="font-semibold">Selengkapnya</span>
+                                    <svg viewBox="0 0 24 24" height="24" stroke>
+                                        <path
+                                            d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pertukaran Mahasiswa  -->
+                    <div class="flex flex-col justify-between w-[256px] h-[370px] rounded-2xl m-3 p-4 bg-white">
+                        <div class="flex flex-col">
+                            <div class="flex justify-center w-[224px] h-[58px] my-4">
+                                <img class="" src="./assets/kampus-mengajar.png" alt="" />
+                            </div>
+                            <div class="">
+                                <p class="text-[18px] ">Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui
+                                    <span class="font-bold leading-5">Kampus Mengajar</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="">
+                                <div class="flex justify-center gap-2 rounded-2xl border border-black p-2 mb-2">
+                                    <span class="font-semibold">Selengkapnya</span>
+                                    <svg viewBox="0 0 24 24" height="24" stroke>
+                                        <path
+                                            d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Wirausaha  -->
+                    <div class="flex flex-col justify-between w-[256px] h-[370px] rounded-2xl m-3 p-4 bg-white">
+                        <div class="flex flex-col">
+                            <div class="flex justify-center w-[224px] h-[58px] my-4">
+                                <img class="" src="./assets/kampus-mengajar.png" alt="" />
+                            </div>
+                            <div class="">
+                                <p class="text-[18px] ">Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui
+                                    <span class="font-bold leading-5">Kampus Mengajar</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="">
+                                <div class="flex justify-center gap-2 rounded-2xl border border-black p-2 mb-2">
+                                    <span class="font-semibold">Selengkapnya</span>
+                                    <svg viewBox="0 0 24 24" height="24" stroke>
+                                        <path
+                                            d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  IISMA -->
+                    <div class="flex flex-col justify-between w-[256px] h-[370px] rounded-2xl m-3 p-4 bg-white">
+                        <div class="flex flex-col">
+                            <div class="flex justify-center w-[224px] h-[58px] my-4">
+                                <img class="" src="./assets/kampus-mengajar.png" alt="" />
+                            </div>
+                            <div class="">
+                                <p class="text-[18px] ">Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui
+                                    <span class="font-bold leading-5">Kampus Mengajar</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="">
+                                <div class="flex justify-center gap-2 rounded-2xl border border-black p-2 mb-2">
+                                    <span class="font-semibold">Selengkapnya</span>
+                                    <svg viewBox="0 0 24 24" height="24" stroke>
+                                        <path
+                                            d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="bg-zinc-800 rounded-2xl lg:w-60 w-full m-6 p-2.5 text-white text-center">
+                    <span class="font-semibold">Lihat Program Lainnya</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex justify-center bg-[#25282b] min-h-screen lg:mt-20 mt-4 ">
+        <div class="lg:w-[1160px] lg:py-20 pt-10">
+            <div class="text-white">
+                <div class=" text-white flex flex-col-reverse lg:flex-row lg:gap-20">
+                    <div class="w-[565px] lg:h-[408px]">
+                        <div class="pl-3">
+                            <p class="text-[28px] leading-[40px] lg:text-5xl font-bold">Kampus Merdeka</p>
+                            <p class="text-[20px] leading-[28px] lg:my-7 my-2 font-semibold">Program persiapan
+                                karier yang
+                                komprehensif untuk mempersiapkan
+                                generasi terbaik Indonesia</p>
+                            <p class="text-[18px] leading-[28px] font-plus">Kampus Merdeka adalah bagian dari kebijakan
+                                Merdeka Belajar oleh Kementerian Pendidikan,
+                                Kebudayaan, Riset, dan
+                                Teknologi (Kemendikbudristek) yang memberikan seluruh mahasiswa</p>
+                            <p class="text-[#ffc000] font-semibold text-[18px] leading-[28px] font-plus">kesempatan
+                                untuk
+                                mengasah kemampuan sesuai bakat dan minat <span class="text-white">dengan</span> terjun
+                                langsung ke dunia kerja
+                                sebagai langkah
+                                persiapan karier.</p>
+                        </div>
                     </div>
                     <div>
-                        <span>Program</span>
+                        <div class="flex justify-center">
+                            <img class="lg:w-full w-[598px] h-[347px] object-cover rounded-2xl" src="./assets/image.png"
+                                alt="">
+                        </div>
                     </div>
-                    <div>
-                        <span>Butuh Bantuan?</span>
+                </div>
+                <div class="">
+                    <p class="lg:mt-20 lg:mb-20 mt-4 mb-2 text-center lg:text-5xl text-2xl font-bold ">Apa saja manfaat
+                        program Kampus Merdeka?</p>
+                    <div class=" grid lg:grid-cols-4 grid-cols-2 lg:text-base text-sm">
+                        <div class="flex flex-col items-center gap-4 lg:p-7 p-5 lg:h-full h-44">
+                            <img class=""
+                                src="data:image/png;base64,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"
+                                alt="">
+                            <p class="text-center">Kegiatan dapat dikonversi menjadi sks</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-4 lg:p-7 p-5 lg:h-full h-44">
+                            <img class=""
+                                src="data:image/png;base64,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"
+                                alt="">
+                            <p class="text-wrap text-center">Perluas jaringan hingga ke luar program studi dan
+                                universitas</p>
+                        </div>
+                        <div class="flex flex-col items-center  gap-4 lg:p-7 p-5 lg:h-full h-44">
+                            <img class=""
+                                src="data:image/png;base64,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"
+                                alt="">
+                            <p class="text-wrap text-center">Eksplorasi pengetahuan dan kemampuan di lapangan selama
+                                lebih dari satu
+                                semester</p>
+                        </div>
+                        <div class="flex flex-col items-center  gap-4 lg:p-7 p-5 lg:h-full h-32">
+                            <img class=""
+                                src="data:image/png;base64,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"
+                                alt="">
+                            <p class="text-wrap text-center">Menimba ilmu secara langsung dari mitra berkualitas dan
+                                terkemuka</p>
+                        </div>
                     </div>
-                    <div class="flex bg-white text-black items-center gap-2 p-3 rounded-3xl">
-                        <svg viewBox="0 0 24 24" height="20" fill="#A0A4A8" stroke="">
-                            <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"></path>
+                </div>
+                <div class="lg:mt-20 lg:p-0 p-5">
+                    <div class="lg:my-7 flex lg:flex-row flex-col lg:gap-4 gap-2 lg:items-center">
+                        <p class="lg:text-9xl text-5xl font-bold font-serif text-[#ffde16]">725.000+</p>
+                        <p class="lg:text-[28px] text-[20px] font-bold">mahasiswa sudah terdaftar dan memiliki akun
+                            Kampus Merdeka</p>
+                    </div>
+                    <div class="lg:my-7 flex lg:flex-row flex-col lg:gap-4 gap-2 lg:items-center">
+                        <p class="lg:text-9xl text-5xl font-bold font-serif text-[#ffde16]">14.000+</p>
+                        <p class="lg:text-[28px] text-[20px] font-bold">sekolah dari seluruh Indonesia telah menerima
+                            manfaat bantuan
+                            pengajaran</p>
+                    </div>
+                    <div class="lg:my-7 flex lg:flex-row flex-col lg:gap-4 gap-2 lg:items-center">
+                        <p class="lg:text-9xl text-5xl font-bold font-serif text-[#ffde16]">3.000+</p>
+                        <p class="lg:text-[28px] text-[20px] font-bold">organisasi dan perusahaan telah mendaftarkan
+                            diri sebagai mitra
+                        </p>
+                    </div>
+                    <div class="lg:my-7 flex lg:flex-row flex-col lg:gap-4 gap-2 lg:items-center">
+                        <p class="lg:text-9xl text-5xl font-bold font-serif text-[#ffde16]">1.300+</p>
+                        <p class="lg:text-[28px] text-[20px] font-bold">Perguruan Tinggi telah berpartisipasi di
+                            berbagai program
+                            Kampus Merdeka</p>
+                    </div>
+                    <!-- 
+                        -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex lg:justify-center mt-20">
+        <div class="lg:w-[1170px] w-screen">
+            <div class="my-4">
+                <p class="lg:text-[40px] text-[28px] font-bold">Apa saja syarat keikutsertaan mahasiswa?</p>
+                <p class="text-[18px]">Berikut adalah <span class="font-semibold">persyaratan umum</span> dari beberapa
+                    program Kampus Merdeka.</p>
+            </div>
+            <div class="w-full overflow-x-scroll">
+                <div class="w-[1170px] rounded-2xl border bg-yellow-500">
+                    <table class="font-plus">
+                        <thead>
+                            <tr class="text-left">
+                                <th class="w-[173px] h-[128px]"></th>
+                                <th class="w-[193px]">
+                                    <p>
+                                        Magang dan Studi
+                                        Independen
+                                        Bersertifikat (MSIB)
+                                    </p>
+                                </th>
+                                <th class="w-[193px]">
+                                    <p>Kampus Mengajar</p>
+                                </th>
+                                <th class="w-[192px]">
+                                    <p>Pertukaran
+                                        Mahasiswa Merdeka</p>
+                                </th>
+                                <th class="w-[193px]">
+                                    <p class="w-1/2">Wirausaha
+                                        Merdeka</p>
+                                </th>
+                                <th class="w-[193px]">
+                                    <p class="w-[161px]">Indonesian
+                                        International
+                                        Student Mobility
+                                        Awards</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-[#eff0f0] ">
+                                <td class="text-center font-bold h-[104px] p-4">
+                                    <p class="text-wrap">Jenjang Pendidikan</p>
+                                </td>
+                                <td>
+                                    <p>S1 atau Vokasi</p>
+                                </td>
+                                <td>
+                                    <p>S1 atau Vokasi</p>
+                                </td>
+                                <td>
+                                    <p>S1 atau Vokasi</p>
+                                </td>
+                                <td>
+                                    <p>S1</p>
+                                </td>
+                                <td>
+                                    <p>S1</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center font-bold h-44">
+                                    <p>Semester</p>
+                                </td>
+                                <td class="pr-16">
+                                    <ul>
+                                        <li class="list-disc">
+                                            D2/D3/D4:
+                                            Minimal semester 2
+                                        </li>
+                                        <li class="list-disc">
+                                            S1:
+                                            Minimal semester 4
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <p>Minimal semester 4</p>
+                                </td>
+                                <td>
+                                    <p>Minimal semester 3</p>
+                                </td>
+                                <td class="pr-16 py-6">
+                                    <ul>
+                                        <li class="list-disc">S1/D3/D4: Minimal semester 5</li>
+                                        <li class="list-disc">D2: Minimal semester 3</li>
+                                        <li class="list-disc">S2/S3: Tanpa batasan</li>
+                                    </ul>
+                                </td>
+                                <td class="pr-6">
+                                    <p>Semester 4 atau 6 saat proses pendaftaran</p>
+                                </td>
+                            </tr>
+                            <tr class="bg-[#eff0f0] ">
+                                <td class="text-center font-bold h-20">
+                                    <p>Minimal IPK</p>
+                                </td>
+                                <td>-</td>
+                                <td>
+                                    <p>3 dari skala 4</p>
+                                </td>
+                                <td>
+                                    <p>2.8 dari skala 4</p>
+                                </td>
+                                <td>-</td>
+                                <td>
+                                    <p>3 dari skala 4</p>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td class="w-[96px] h-[100px]"></td>
+                                <td class="text-center h-20">
+                                    <span
+                                        class="border border-black rounded-2xl font-semibold py-2.5 px-6">Selengkapnya</span>
+                                </td>
+                                <td class="text-center">
+                                    <span
+                                        class="border border-black rounded-2xl font-semibold py-2.5 px-6">Selengkapnya</span>
+                                </td>
+                                <td class="text-center">
+                                    <span
+                                        class="border border-black rounded-2xl font-semibold py-2.5 px-6">Selengkapnya</span>
+                                </td>
+                                <td class="text-center">
+                                    <span
+                                        class="border border-black rounded-2xl font-semibold py-2.5 px-6">Selengkapnya</span>
+                                </td>
+                                <td class="text-center">
+                                    <span
+                                        class="border border-black rounded-2xl font-semibold py-2.5 px-6">Selengkapnya</span>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="font-plus mt-6">
+                <p class="font-bold">Catatan Lain</p>
+                <ol class="w-[768px]">
+                    <li class="list-decimal pl-2">Perguruan Tinggi harus merupakan Perguruan Tinggi Negeri atau Swasta
+                        dan <span class="font-bold">berada di bawah Kementerian Pendidikan,
+                            Kebudayaan, Riset, dan Teknologi.</span> Cek panduannya <span
+                            class="underline text-blue-700 font-semibold">di sini</span>.
+                    </li>
+                    <li class="list-decimal pl-2">Mahasiswa hanya dapat mengikuti <span class="font-bold">1 (satu)
+                            program per periode</span></li>
+                    <li class="list-decimal pl-2">Harus berstatus <span class="font-bold">mahasiswa aktif</span> . Jika
+                        mahasiswa lulus/mengikuti yudisium sebelum program
+                        berakhir maka dianggap
+                        mengundurkan diri dari program Kampus Merdeka.</li>
+                </ol>
+            </div>
+            <div class="flex justify-center items-center mt-4 mb-10">
+                <div class="bg-zinc-800 rounded-2xl lg:w-60 w-full m-6 p-2.5 text-white text-center">
+                    <span class="font-semibold">Lihat Program Lainnya</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="flex justify-center bg-white overflow-hidden">
+        <div class="w-[1170px]">
+            <div class="pt-36">
+                <p class="text-center text-5xl font-semibold">Pertanyaan Umum</p>
+            </div>
+            <div class="">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 p-14">
+                    <div class="flex justify-between items-center font-plus py-8 border-b">
+                        <p class="text-[18px]">Bagaimana cara registrasi akun Merdeka Belajar Kampus Merdeka?</p>
+                        <svg class="pl-4" viewBox="0 0 24 24" height="24" fill="#000000" stroke="">
+                            <path
+                                d="M13,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4.3-4.3H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h11.6l-4.3-4.3  c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4l0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.3-0.1,0.4  c0,0.1-0.1,0.2-0.2,0.3l-6,6C13.5,18.9,13.3,19,13,19z">
+                            </path>
                         </svg>
-                        <span class="font-semibold" style="font-family: &quot;Plus Jakarta Sans&quot;, serif">Masuk ke Akun</span>
+                    </div>
+                    <div class="flex justify-between items-center font-plus py-8 border-b">
+                        <p class="text-[18px]">Bagaimana cara cek data saya di PDDikti?</p>
+                        <svg class="pl-4" viewBox="0 0 24 24" height="24" fill="#000000" stroke="">
+                            <path
+                                d="M13,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4.3-4.3H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h11.6l-4.3-4.3  c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4l0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.3-0.1,0.4  c0,0.1-0.1,0.2-0.2,0.3l-6,6C13.5,18.9,13.3,19,13,19z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex justify-between items-center font-plus py-8 border-b">
+                        <p class="text-[18px]">Apa yang harus saya lakukan apabila data saya berbeda atau tidak ada di
+                            PDDikti?</p>
+                        <svg class="pl-4" viewBox="0 0 24 24" height="24" fill="#000000" stroke="">
+                            <path
+                                d="M13,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4.3-4.3H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h11.6l-4.3-4.3  c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4l0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.3-0.1,0.4  c0,0.1-0.1,0.2-0.2,0.3l-6,6C13.5,18.9,13.3,19,13,19z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex justify-between items-center font-plus py-8 border-b">
+                        <p class="text-[18px]">Bagaimana cara verifikasi Nomor Induk Siswa Nasional (NISN)?</p>
+                        <svg class="pl-4" viewBox="0 0 24 24" height="24" fill="#000000" stroke="">
+                            <path
+                                d="M13,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4.3-4.3H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h11.6l-4.3-4.3  c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4l0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.3-0.1,0.4  c0,0.1-0.1,0.2-0.2,0.3l-6,6C13.5,18.9,13.3,19,13,19z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex justify-between items-center font-plus py-8 border-b">
+                        <p class="text-[18px]">Bagaimana jika saya gagal verifikasi Nomor Induk Siswa Nasional (NISN)?
+                        </p>
+                        <svg class="pl-4" viewBox="0 0 24 24" height="24" fill="#000000" stroke="">
+                            <path
+                                d="M13,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4.3-4.3H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h11.6l-4.3-4.3  c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4l0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.3-0.1,0.4  c0,0.1-0.1,0.2-0.2,0.3l-6,6C13.5,18.9,13.3,19,13,19z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex justify-between items-center font-plus py-8 border-b">
+                        <p class="text-[18px]">Apakah saya boleh mendaftar lebih dari 1 program Kampus Merdeka dalam
+                            periode yang sama?</p>
+                        <svg class="pl-4" viewBox="0 0 24 24" height="24" fill="#000000" stroke="">
+                            <path
+                                d="M13,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4.3-4.3H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h11.6l-4.3-4.3  c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4l0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.3-0.1,0.4  c0,0.1-0.1,0.2-0.2,0.3l-6,6C13.5,18.9,13.3,19,13,19z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex justify-between items-center font-plus py-8 border-b">
+                        <p class="text-[18px]">Apa saja syarat verifikasi rekening bank dan bagaimana caranya?</p>
+                        <svg class="pl-4" viewBox="0 0 24 24" height="24" fill="#000000" stroke="">
+                            <path
+                                d="M13,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4.3-4.3H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h11.6l-4.3-4.3  c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4l0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.3-0.1,0.4  c0,0.1-0.1,0.2-0.2,0.3l-6,6C13.5,18.9,13.3,19,13,19z">
+                            </path>
+                        </svg>
                     </div>
                 </div>
-                <div class="flex lg:hidden text-white items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16 M4 12h16 M4 18h16" />
-                    </svg>
-                </div>
-            </div>
-        </nav>
-        <!-- SEMI NAV -->
-        <nav class="hidden lg:flex justify-center">
-            <div class="flex justify-start w-[1140px] gap-10 p-4">
-                <div class="flex gap-5 text-wrap justify-center items-center font-semibold">
-                    <p class="w-20">Kampus Mengajar</p>
-                    <svg viewBox="0 0 24 24" height="24" fill="" stroke="">
-                        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
-                    </svg>
-                </div>
-                <div class="flex gap-5 text-wrap justify-center items-center font-semibold">
-                    <p class="w-28">Magang MSIB</p>
-                    <svg viewBox="0 0 24 24" height="24" fill="" stroke="">
-                        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
-                    </svg>
-                </div>
-                <div class="flex gap-5 text-wrap justify-center items-center font-semibold">
-                    <p class="w-36">Studi Independen Bersertifikat</p>
-                    <svg viewBox="0 0 24 24" height="24" fill="" stroke="">
-                        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
-                    </svg>
-                </div>
-                <div class="flex gap-5 text-wrap justify-center items-center font-semibold">
-                    <p class="w-40">Pertukaran Mahasiswa Merdeka</p>
-                    <svg viewBox="0 0 24 24" height="24" fill="" stroke="">
-                        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
-                    </svg>
-                </div>
-                <div class="flex gap-5 text-wrap justify-center items-center font-semibold">
-                    <p class="w-36">Program dan Kegiatan Lainnya</p>
-                </div>
-            </div>
-        </nav>
-        <!-- SECTION -->
-        <section class="flex justify-center bg-[url(./headline-mahasiswa.webp)] bg-no-repeat bg-cover bg-center w-full">
-            <div class="flex justify-start items-center w-[1170px] lg:h-[556px]">
-                <div class="text-wrap text-white lg:mx-7 mx-5 lg:pt-0 pt-12 pb-10">
-                    <div class="lg:w-auto w-3/5 lg:w-1/2">
-                        <span class="lg:text-7xl text-4xl font-bold font-sans lg:w-auto">Ambil Kendali Masa Depanmu</span>
-                    </div>
-                    <div>
-                        <p class="text-l lg:text-xl">Kampus Merdeka adalah cara terbaik berkuliah. Dapatkan kemerdekaan untuk membentuk masa depan yang sesuai dengan aspirasi kariermu.</p>
-                    </div>
-                    <div class="flex mt-5 gap-3 flex-col lg:flex-initial text-sm">
-                        <div class="bg-blue-600 rounded-2xl lg:w-56 lg:py-3 py-2.5 text-center">
-                            <span class="font-semibold">Telusuri Program</span>
-                        </div>
-                        <div class="bg-white rounded-2xl lg:py-3 py-2.5 lg:w-56 text-center">
-                            <span class="font-semibold text-black">Cek Persyaratan Umum</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="flex justify-center">
-            <div class="lg:w-[1170px]">
-                <div class="p-6">
-                    <span class="text-3xl font-bold">Program dan Kegiatan Unggulan</span>
-                </div>
-                <div class="lg:w-[1170px] w-screen overflow-scroll">
-                    <div class="mx-4 w-full flex">
-                        <!-- KAMPUS MENGAJAR -->
-                        <div class="flex flex-col justify-between w-64 h-96 rounded-2xl m-3 p-4 bg-white">
-                            <div class="">
-                                <div class="flex justify-center m-3 py-2">
-                                    <img class="" src="./assets/kampus-mengajar-logo@3x.eff2b566.webp" alt="" />
-                                </div>
-                                <div class="pr-2">
-                                    <p class="">Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui <span class="font-bold">Kampus Mengajar</span></p>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="flex justify-center gap-3 rounded-2xl border-2 border-black p-2 mb-3">
-                                    <span class="font-semibold">Selengkapnya</span>
-                                    <svg viewBox="0 0 24 24" height="24" stroke>
-                                        <path d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- MAGANG MSIB -->
-                        <div class="flex flex-col justify-between w-64 h-96 rounded-2xl m-3 p-4 bg-white">
-                            <div class="">
-                                <div class="flex justify-center m-3 py-2">
-                                    <img class="" src="./assets/msib-logo@3x.79b8263c.webp" alt="" />
-                                </div>
-                                <div class="pr-2">
-                                    <p class="">Rasakan pengalaman dunia kerja dengan terjun langsung melalui <span class="font-bold">Magang MSIB</span></p>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="flex justify-center gap-3 rounded-2xl border-2 border-black p-2 mb-3">
-                                    <span class="font-semibold">Selengkapnya</span>
-                                    <svg viewBox="0 0 24 24" height="24" stroke>
-                                        <path d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- STUDI INDEPENDEN -->
-                        <div class="flex flex-col justify-between w-64 h-96 rounded-2xl m-3 p-4 bg-white">
-                            <div class="">
-                                <div class="flex justify-center m-3 py-2">
-                                    <img class="" src="./assets/msib-logo@3x.79b8263c.webp" alt="" />
-                                </div>
-                                <div class="pr-2">
-                                    <p class="">Riset kolaboratif bersama perusahaan ternama melalui <span class="font-bold">Studi Independen</span></p>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="flex justify-center gap-3 rounded-2xl border-2 border-black p-2 mb-3">
-                                    <span class="font-semibold">Selengkapnya</span>
-                                    <svg viewBox="0 0 24 24" height="24" stroke>
-                                        <path d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- MAGANG MANDIRI  -->
-                        <div class="flex flex-col justify-between w-64 h-96 rounded-2xl m-3 p-4 bg-white">
-                            <div class="">
-                                <div class="flex justify-center m-3 py-2">
-                                    <img class="" src="./assets/mandiri-logo@3x.f47c79e6.webp" alt="" />
-                                </div>
-                                <div class="pr-2">
-                                    <p class="">Temukan pengalaman dunia kerja yang dikelola secara langsung oleh perusahaan melalui <span class="font-bold">Magang Mandiri</span>!</p>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="flex justify-center gap-3 rounded-2xl border-2 border-black p-2 mb-3">
-                                    <span class="font-semibold">Selengkapnya</span>
-                                    <svg viewBox="0 0 24 24" height="24" stroke>
-                                        <path d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Pertukaran Mahasiswa  -->
-                        <div class="flex flex-col justify-between w-64 h-96 rounded-2xl m-3 p-4 bg-white">
-                            <div class="">
-                                <div class="flex justify-center m-3 py-2">
-                                    <img class="" src="./assets/pmm-logo@3x.6dc70f97.webp" alt="" />
-                                </div>
-                                <div class="pr-2">
-                                    <p class="">Bertukar pengalaman budaya dengan universitas lain melalui <span class="font-bold">Pertukaran Mahasiswa</span> dalam negeri</p>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="flex justify-center gap-3 rounded-2xl border-2 border-black p-2 mb-3">
-                                    <span class="font-semibold">Selengkapnya</span>
-                                    <svg viewBox="0 0 24 24" height="24" stroke>
-                                        <path d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Wirausaha  -->
-                        <div class="flex flex-col justify-between w-64 h-96 rounded-2xl m-3 p-4 bg-white">
-                            <div class="">
-                                <div class="flex justify-center m-3 py-2">
-                                    <img class="" src="./assets/mandiri-logo@3x.f47c79e6.webp" alt="" />
-                                </div>
-                                <div class="pr-2">
-                                    <p class="">Ikuti program wirausaha dari perguruan tinggi lain melalui <span class="font-bold">Wirausaha Merdeka</span></p>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="flex justify-center gap-3 rounded-2xl border-2 border-black p-2 mb-3">
-                                    <span class="font-semibold">Selengkapnya</span>
-                                    <svg viewBox="0 0 24 24" height="24" stroke>
-                                        <path d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <!--   -->
-                        <div class="flex flex-col justify-between w-64 h-96 rounded-2xl m-3 p-4 bg-white">
-                            <div class="">
-                                <div class="flex justify-center m-3 py-2">
-                                    <img class="" src="./assets/mandiri-logo@3x.f47c79e6.webp" alt="" />
-                                </div>
-                                <div class="pr-2">
-                                    <p class="">Perluas wawasan dan koneksi melalui <span class="font-bold">Pertukaran Mahasiswa secara Internasional</span></p>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="flex justify-center gap-3 rounded-2xl border-2 border-black p-2 mb-3">
-                                    <span class="font-semibold">Selengkapnya</span>
-                                    <svg viewBox="0 0 24 24" height="24" stroke>
-                                        <path d="M6,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L15.6,7H7.9c-0.6,0-1-0.4-1-1s0.4-1,1-1H18c0,0,0,0,0,0l0,0  c0.1,0,0.3,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2s0.2,0.2,0.2,0.3C19,5.7,19,5.9,19,6l0,0c0,0,0,0,0,0v10.1c0,0.6-0.4,1-1,1s-1-0.4-1-1  V8.4L6.7,18.7C6.5,18.9,6.3,19,6,19z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-center items-center">
-                    <div class="bg-zinc-800 rounded-2xl lg:w-96 w-full m-6 p-2.5 text-white text-center">
+                <div class="flex justify-center items-center mt-4 mb-10">
+                    <div class="rounded-2xl border border-black lg:w-60 w-full m-6 p-2.5 text-center">
                         <span class="font-semibold">Lihat Program Lainnya</span>
                     </div>
                 </div>
             </div>
-        </section>
-    </body>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-black text-white lg:flex justify-center font-plus hidden">
+        <div class="lg:max-w-[1170px] my-20">
+            <div class="flex gap-6 h-[296px] w-[1119px]">
+                <div class="">
+                    <img class="" src="./assets/logo-kemendikbud.ae86719b.webp" alt="kemdik">
+                </div>
+                <div class="w-[474px]">
+                    <p class="font-bold w-[374px] mb-10">Direktorat Jenderal Pendidikan Tinggi, Riset, dan
+                        Teknologi (Diktiristek)
+                    </p>
+                    <p class="mb-5">marketing@kampusmerdeka.co</p>
+                    <p>Jl. Jenderal Sudirman, Senayan, Jakarta 10270</p>
+                </div>
+                <div class="pr-20 flex flex-col gap-4">
+                    <p class="font-semibold">Navigasi</p>
+                    <div class="my-4">
+                        <p class="">Beranda</p>
+                    </div>
+                    <p>Berita</p>
+                    <p>Pengumuman</p>
+                    <p>FAQ</p>
+                    <p>Program</p>
+                    <p>Daftar</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="font-semibold">Tautan Eksternal</p>
+                    <div class="my-4">
+                        <p>Mitra Kampus Merdeka</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mt-10">
+                <div class="w-36 h-10"></div>
+                <div class="flex justify-between w-full">
+                    <div class="w-1/2 px-4">
+                        <div class="flex gap-6">
+                            <svg viewBox="0 0 24 24" height="24" fill="#FFFFFF" stroke="">
+                                <path
+                                    d="M21.5,7.1c0,0.2,0,0.4,0,0.6c0,6.5-4.9,13.9-13.9,13.9v0c-2.7,0-5.3-0.8-7.5-2.2c0.4,0,0.8,0.1,1.2,0.1  c2.2,0,4.3-0.7,6.1-2.1c-2.1,0-3.9-1.4-4.6-3.4C3.5,14.2,4.2,14.2,5,14C2.7,13.5,1,11.5,1,9.2c0,0,0,0,0-0.1  c0.7,0.4,1.4,0.6,2.2,0.6C1.1,8.3,0.5,5.4,1.7,3.2c2.5,3.1,6.1,4.9,10.1,5.1c-0.4-1.7,0.1-3.5,1.4-4.7c2-1.9,5.1-1.8,6.9,0.2  c1.1-0.2,2.1-0.6,3.1-1.2c-0.4,1.1-1.1,2.1-2.1,2.7c1-0.1,1.9-0.4,2.8-0.8C23.3,5.6,22.4,6.4,21.5,7.1z">
+                                </path>
+                            </svg>
+                            <svg viewBox="0 0 24 24" height="24" fill="#FFFFFF" stroke="">
+                                <path
+                                    d="M16.9,0H7.1C3.2,0,0,3.2,0,7.1v9.7C0,20.8,3.2,24,7.1,24h9.7c3.9,0,7.1-3.2,7.1-7.1V7.1C24,3.2,20.8,0,16.9,0z M21.6,16.9  c0,2.6-2.1,4.7-4.7,4.7H7.1c-2.6,0-4.7-2.1-4.7-4.7V7.1c0-2.6,2.1-4.7,4.7-4.7h9.7c2.6,0,4.7,2.1,4.7,4.7V16.9z M12,5.8  c-3.4,0-6.2,2.8-6.2,6.2c0,3.4,2.8,6.2,6.2,6.2c3.4,0,6.2-2.8,6.2-6.2C18.2,8.6,15.4,5.8,12,5.8z M12,15.8c-2.1,0-3.8-1.7-3.8-3.8  c0-2.1,1.7-3.8,3.8-3.8c2.1,0,3.8,1.7,3.8,3.8C15.8,14.1,14.1,15.8,12,15.8z M18.2,7.3c0.8,0,1.5-0.7,1.5-1.5S19,4.4,18.2,4.4  c-0.8,0-1.5,0.7-1.5,1.5S17.4,7.3,18.2,7.3z">
+                                </path>
+                            </svg>
+                            <svg viewBox="0 0 48 48" height="24" fill="#FFFFFF" stroke="">
+                                <path
+                                    d="M43.2,12.4c-0.5-1.7-1.8-3.1-3.5-3.5C36.5,8,24,8,24,8S11.5,8,8.4,8.8c-1.7,0.5-3.1,1.8-3.5,3.5C4,15.5,4,24,4,24  s0,8.5,0.8,11.6c0.5,1.7,1.8,3.1,3.5,3.5C11.5,40,24,40,24,40s12.5,0,15.6-0.8c1.7-0.5,3.1-1.8,3.5-3.5C44,32.5,44,24,44,24  S44,15.5,43.2,12.4z M20,29.2V18.8c0-0.8,0.8-1.2,1.5-0.9l9,5.2c0.7,0.4,0.7,1.3,0,1.7l-9,5.2C20.8,30.4,20,30,20,29.2z">
+                                </path>
+                            </svg>
+                            <svg viewBox="0 0 48 48" height="24" fill="#FFFFFF" stroke="">
+                                <path
+                                    d="M24,4C13,4,4,13,4,24c0,10.8,8.6,19.6,19.2,20V30.1h-4.7v-5.5h4.7v-4c0-4.6,2.8-7.2,7-7.2c1.4,0,2.8,0.1,4.2,0.2v4.9h-2.9  c-2.3,0-2.7,1.1-2.7,2.6v3.5h5.4l-0.7,5.4h-4.7v13.3C37.5,41.2,44,33.4,44,24C44,13,35,4,24,4z">
+                                </path>
+                            </svg>
+                            <svg viewBox="0 0 24 24" height="24" fill="#FFFFFF" stroke="">
+                                <path
+                                    d="M4 0C1.79086 0 0 1.79086 0 4V20C0 22.2091 1.79086 24 4 24H20C22.2091 24 24 22.2091 24 20V4C24 1.79086 22.2091 0 20 0H4ZM7.4649 19.9386H3.90414V9.22581H7.4649V19.9386ZM5.68452 7.76366H5.66099C4.46653 7.76366 3.69231 6.94075 3.69231 5.91218C3.69231 4.86103 4.48916 4.06143 5.70783 4.06143C6.92677 4.06143 7.67583 4.86103 7.69915 5.91218C7.69915 6.94075 6.92677 7.76366 5.68452 7.76366ZM20.3077 19.9386H16.746V14.2072C16.746 12.7677 16.2314 11.7851 14.9423 11.7851C13.9578 11.7851 13.3728 12.4467 13.1151 13.0875C13.0214 13.3165 12.9969 13.6347 12.9969 13.9557V19.9386H9.43453C9.43453 19.9386 9.48227 10.2309 9.43453 9.22586H12.9969V10.7439C13.4702 10.0156 14.3149 8.97437 16.2069 8.97437C18.5508 8.97437 20.3077 10.5051 20.3077 13.7954V19.9386Z">
+                                </path>
+                            </svg>
+                            <svg viewBox="0 0 24 24" height="24" fill="#FFFFFF" stroke="">
+                                <path
+                                    d="M12,24c6.6,0,12-5.4,12-12S18.6,0,12,0S0,5.4,0,12S5.4,24,12,24z M15.4,21.7c0.8-0.8,1.4-1.8,1.9-2.9  c0.6,0.2,1.1,0.5,1.7,0.8C17.9,20.4,16.7,21.2,15.4,21.7z M20.2,18.1c-0.7-0.4-1.4-0.8-2.2-1c0.4-1.3,0.7-2.7,0.8-4.2h3.4  C22,14.8,21.3,16.6,20.2,18.1z M22.2,11.1h-3.4c-0.1-1.5-0.4-2.9-0.8-4.2c0.8-0.3,1.5-0.6,2.2-1C21.3,7.4,22,9.2,22.2,11.1z M19,4.5  c-0.5,0.3-1.1,0.5-1.7,0.8c-0.5-1.1-1.2-2.1-2-2.9C16.7,2.8,17.9,3.6,19,4.5z M12.9,2.5c1.1,0.8,2,2,2.7,3.3  c-0.9,0.2-1.8,0.3-2.7,0.4V2.5z M12.9,8c1.2-0.1,2.3-0.2,3.4-0.5c0.4,1.1,0.6,2.4,0.7,3.7h-4.1V8z M12.9,12.9H17  c-0.1,1.3-0.3,2.5-0.7,3.7c-1.1-0.3-2.2-0.5-3.4-0.5V12.9z M12.9,17.8c0.9,0.1,1.8,0.2,2.7,0.4c-0.7,1.4-1.6,2.5-2.7,3.3V17.8z   M5,19.5c0.5-0.3,1.1-0.5,1.7-0.7c0.5,1.1,1.2,2.1,1.9,2.9C7.3,21.2,6.1,20.4,5,19.5z M11.1,21.5c-1.1-0.8-2-2-2.7-3.3  c0.9-0.2,1.8-0.3,2.7-0.4V21.5z M11.1,16c-1.2,0.1-2.3,0.2-3.4,0.5c-0.4-1.1-0.6-2.4-0.7-3.7h4.1V16z M11.1,11.1H7  c0.1-1.3,0.3-2.5,0.7-3.7C8.8,7.7,9.9,7.9,11.1,8V11.1z M11.1,2.5v3.7C10.2,6.1,9.3,6,8.4,5.8C9.1,4.4,10,3.3,11.1,2.5z M8.7,2.3  c-0.8,0.8-1.4,1.8-2,2.9C6.1,5.1,5.6,4.8,5,4.5C6.1,3.6,7.3,2.8,8.7,2.3z M3.8,5.9c0.7,0.4,1.4,0.8,2.2,1c-0.4,1.3-0.7,2.7-0.8,4.2  H1.8C2,9.2,2.7,7.4,3.8,5.9z M5.2,12.9c0.1,1.5,0.4,2.9,0.8,4.2c-0.8,0.3-1.5,0.6-2.2,1c-1.1-1.5-1.8-3.3-2-5.2H5.2z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="w-1/2 px-4">
+                        <div>
+                            <p class="text-[14px] w-[400px]">
+                                Hak Cipta 2022 Kementerian Pendidikan dan Kebudayaan RI
+
+                                Foto oleh ITS, ITERA, and UI
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
